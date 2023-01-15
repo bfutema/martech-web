@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { handleOpen } from '@styles/common/handleOpen.styles';
+import { handleOpen } from '@styles/common';
 import { Theme } from '@styles/theme';
 
 interface ContainerProps {
