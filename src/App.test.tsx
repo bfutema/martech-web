@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import { act, render } from '@testing-library/react';
 
 import { App } from './App';
+import reportWebVitals from './reportWebVitals';
 
 describe('App', () => {
   it('should render App', () => {
     render(<App />);
   });
 
-  test('renders with App and root div', async () => {
+  it('renders with App and root div', async () => {
     // Create and append to document body
     // an HTML element with id = root
     const root = document.createElement('div');
@@ -28,4 +29,6 @@ describe('App', () => {
     //   </React.StrictMode>,
     // );
   });
+
+  it('reportWebVitals', () => reportWebVitals(() => jest.fn()));
 });
