@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { Router } from './routes';
+
 export const App: React.FC = () => {
   return (
-    <div>
-      <span>App</span>
-    </div>
+    <>
+      <Router />
+    </>
   );
 };
