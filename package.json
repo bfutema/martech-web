@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -36,6 +37,30 @@
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",
     "typescript": "^4.9.4"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@assets/(.*)$": "<rootDir>/src/assets/$1",
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "^@constants/(.*)$": "<rootDir>/src/constants/$1",
+      "^@contexts/(.*)$": "<rootDir>/src/contexts/$1",
+      "^@helpers/(.*)$": "<rootDir>/src/helpers/$1",
+      "^@hooks/(.*)$": "<rootDir>/src/hooks/$1",
+      "^@interfaces/(.*)$": "<rootDir>/src/interfaces/$1",
+      "^@layouts/(.*)$": "<rootDir>/src/layouts/$1",
+      "^@pages/(.*)$": "<rootDir>/src/pages/$1",
+      "^@services/(.*)$": "<rootDir>/src/services/$1",
+      "^@styles/(.*)$": "<rootDir>/src/styles/$1",
+      "^@utils/(.*)$": "<rootDir>/src/utils/$1"
+    },
+    "coverageThreshold": {
+      "global": {
+          "branches": 100,
+          "functions": 100,
+          "lines": 100,
+          "statements": 100
+      }
+    }
   },
   "browserslist": {
     "production": [
