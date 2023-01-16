@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable consistent-return */
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function useClickAway(
-  ref: any,
+  ref: React.RefObject<HTMLElement>,
   handler: (event: Event | MouseEvent) => void,
   options: { enabled: boolean },
 ) {
@@ -19,7 +18,7 @@ function useClickAway(
     if (!enabled) return;
 
     function internalHandler(e: Event): void {
-      if (ref.current && !ref.current.contains(e.target)) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
         return handlerRef.current(e);
       }
     }
