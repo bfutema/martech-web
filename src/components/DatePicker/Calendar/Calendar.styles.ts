@@ -15,6 +15,8 @@ export const Container = styled.div<ContainerProps>`
   box-shadow: ${Theme.shadows['shadow-level-1']};
   background: ${Theme.colors['color-neutral-white']};
 
+  padding: 12px;
+
   position: absolute;
   left: 0;
   top: calc(100% + 8px);
@@ -67,9 +69,8 @@ export const Control = styled.div`
 `;
 
 export const Header = styled.div`
-  margin: 4px -4px 0px -4px;
+  margin: 8px -2px 8px -2px;
 
-  gap: 4px;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(7, 1fr);
@@ -135,7 +136,7 @@ export const Day = styled.button<DayProps>`
   ${({ isOpen }) => handleOpen(isOpen)}
 
   &:hover {
-    background: ${Theme.colors['color-primary-darker-60']};
+    background: ${Theme.colors['color-secondary-darker-60']};
 
     color: ${Theme.colors['color-neutral-white']};
     font-weight: ${Theme.fontWeights['font-weight-bold']};
