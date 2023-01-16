@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import React, { useEffect, useRef } from 'react';
 
 function useClickAway(
@@ -15,11 +14,11 @@ function useClickAway(
   });
 
   useEffect(() => {
-    if (!enabled) return;
+    if (!enabled) return () => '';
 
     function internalHandler(e: Event): void {
       if (ref.current && !ref.current.contains(e.target as Node)) {
-        return handlerRef.current(e);
+        handlerRef.current(e);
       }
     }
 
