@@ -58,6 +58,7 @@
     ],
     "no-nested-ternary": "off",
     "no-param-reassign": "off",
+    "no-plusplus": "off",
     "no-use-before-define": "off",
     "no-useless-constructor": "off",
     "prettier/prettier": [
