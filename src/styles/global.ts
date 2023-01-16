@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     background: #fdfcff;
+    font-family: 'Inter', sans-serif;
 
     color: #000000;
     -webkit-font-smoothing: antialiased;
@@ -31,6 +32,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
 
     font-size: 1rem;
+    font-family: 'Inter', sans-serif;
 
     overflow: hidden;
   }
