@@ -19,7 +19,9 @@ function useClickAway(
     if (!enabled) return;
 
     function internalHandler(e: Event): void {
-      return handlerRef.current(e);
+      if (ref.current && !ref.current.contains(e.target)) {
+        return handlerRef.current(e);
+      }
     }
 
     document.addEventListener('pointerdown', internalHandler);
