@@ -18,7 +18,7 @@ function Component() {
 
 describe('useClickAway', () => {
   it('should be able to use hook useClickAway', () => {
-    renderHook(() => useClickAway(jest.fn(), jest.fn(), { enabled: true }));
+    renderHook(() => useClickAway(useRef(null), jest.fn(), { enabled: true }));
 
     render(
       <div data-testid="outside">
