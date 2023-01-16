@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-import { useClickAway } from '@hooks/useClickAway/useClickAway';
+import { useClickAway } from '@hooks/useClickAway';
 
 import { Options } from './Options';
 
