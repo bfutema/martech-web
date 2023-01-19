@@ -35,6 +35,9 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Inter', sans-serif;
 
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
   }
 
   body > iframe {
