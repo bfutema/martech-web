@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "date-fns": "^2.0.0-beta.5",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-ink": "^6.5.3",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
